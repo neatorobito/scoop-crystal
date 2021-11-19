@@ -5,7 +5,7 @@
         "https://github.com/crystal-lang/crystal/archive/refs/heads/master.zip",
         "https://github.com/neatorobito/scoop-crystal/raw/main/crystal-nightly-bin-4204bce.zip"
     ],
-    "env_add_path": "$dir",
+    "env_add_path": ".",
     "env_set": {
         "LIB": "$dir",
         "CRYSTAL_PATH": ["$dir\\crystal-master", "$dir\\crystal-master\\src"]
