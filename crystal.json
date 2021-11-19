@@ -1,8 +1,8 @@
 {
     "version": "1.2.2",
-    "description" : "Crystal programming language nightly preview (commit hash #4204bce)",
+    "description" : "Crystal programming language nightly preview (commit 4204bce)",
     "url": [
-        "https://github.com/crystal-lang/crystal/archive/4204bce75e6b79adad040f1d130adc7af95e5496.zip",
+        "https://github.com/neatorobito/scoop-crystal/blob/main/crystal-nightly-bin-4204bce.zip",
         "https://github.com/neatorobito/scoop-crystal/crystal-nightly-bin-4204bce.zip"
     ],
     "extract-to": "crystal-win32",
