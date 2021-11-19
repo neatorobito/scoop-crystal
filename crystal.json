@@ -1,0 +1,15 @@
+{
+    "version": "1.2.2@4204bce",
+    "description" : "Crystal programming language (preview)",
+    "url": [
+        "https://github.com/crystal-lang/crystal/archive/4204bce75e6b79adad040f1d130adc7af95e5496.zip",
+        "https://github.com/neatorobito/scoop-crystal/crystal-nightly-bin-4204bce.zip"
+    ],
+    "extract-to": "crystal-win32",
+    "env_add_path": "$dir\\crystal-win32",
+    "env_set": {
+        "LIB": "$dir\\crystal-win32",
+        "CRYSTAL_PATH": ["$dir\\crystal-win32", "$dir\\crystal-win32\\src"]
+    },
+    "bin": "crystal-win32\\crystal.exe"
+}
