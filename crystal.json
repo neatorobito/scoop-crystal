@@ -8,7 +8,7 @@
     "env_add_path": ".",
     "env_set": {
         "LIB": "$dir",
-        "CRYSTAL_PATH": ["$dir\\crystal-master", "$dir\\crystal-master\\src"]
+        "CRYSTAL_PATH": "$dir;$dir\\crystal-master\\src"
     },
     "bin": "crystal.exe"
 }
