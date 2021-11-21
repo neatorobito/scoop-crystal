@@ -1,4 +1,3 @@
-$cwd = Get-Location
 $installationPath = vswhere.exe -prerelease -latest -property installationPath
 if ($installationPath -and (test-path "$installationPath\Common7\Tools\vsdevcmd.bat")) {
   
