@@ -5,10 +5,11 @@
         "https://github.com/crystal-lang/crystal/archive/refs/heads/master.zip",
         "https://github.com/neatorobito/scoop-crystal/raw/main/crystal-nightly-bin-4204bce.zip"
     ],
+    "depends": "vswhere",
     "env_add_path": ".",
     "env_set": {
         "LIB": "$dir",
         "CRYSTAL_PATH": "$dir;$dir\\crystal-master\\src"
     },
-    "bin": "crystal.exe"
+    "bin": "crystal.ps1"
 }
