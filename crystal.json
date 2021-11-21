@@ -1,13 +1,12 @@
 {
     "version": "1.2.2",
     "description" : "Crystal programming language nightly preview (commit 4204bce)",
+    "pre_install": ["git clone https://github.com/crystal-lang/crystal; pushd crystal; git checkout 4204bce; popd crystal"],
     "url": [
-        "https://github.com/crystal-lang/crystal/archive/refs/heads/master.zip",
         "https://github.com/neatorobito/scoop-crystal/raw/main/crystal-nightly-bin-4204bce.zip",
         "https://github.com/neatorobito/scoop-crystal/raw/main/crystal.ps1"
     ],
     "depends": "vswhere",
-    "env_add_path": ".",
     "env_set": {
         "LIB": "$dir",
         "CRYSTAL_PATH": "$dir;$dir\\crystal-master\\src"
