@@ -5,6 +5,7 @@
         "https://github.com/crystal-lang/crystal/archive/refs/heads/master.zip",
         "https://github.com/neatorobito/scoop-crystal/archive/refs/heads/main.zip"
     ],
+    "extract_dir": "scoop-crystal-master",
     "depends": "vswhere",
     "env_add_path": ".",
     "env_set": {
