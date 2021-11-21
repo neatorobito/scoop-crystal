@@ -3,7 +3,7 @@
     "description" : "Crystal programming language nightly preview (commit 4204bce)",
     "url": [
         "https://github.com/crystal-lang/crystal/archive/refs/heads/master.zip",
-        "https://github.com/neatorobito/scoop-crystal/raw/main/crystal-nightly-bin-4204bce.zip"
+        "https://github.com/neatorobito/scoop-crystal/archive/refs/heads/main.zip"
     ],
     "depends": "vswhere",
     "env_add_path": ".",
