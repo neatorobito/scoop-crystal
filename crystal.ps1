@@ -9,7 +9,7 @@ if ($installationPath -and (test-path "$installationPath\Common7\Tools\vsdevcmd.
     $env:READY_FOR_CRYSTAL = $true
   } 
 
-  & crystal.exe $args
+  & _crystal.exe $args
 }
 else {
     "Can't find the Visual Studio Build Tools, please verify your installation."

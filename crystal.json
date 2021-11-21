@@ -12,5 +12,6 @@
         "LIB": "$dir",
         "CRYSTAL_PATH": "$dir;$dir\\crystal-master\\src"
     },
-    "bin": ["crystal.ps1", "crystal.exe"]
+    "bin": ["crystal.ps1"],
+    "post_install": [ "mv $dir\\crystal.exe $dir\\_crystal.exe"]
 }
