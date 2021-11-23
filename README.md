@@ -15,11 +15,6 @@ scoop install crystal
 
 And voila!
 
-```
-echo 'puts "Hello from Windows!"' > hello_world.cr
-crystal .\hello_.cr
-```
-
 ### Notes
 **Crystal on Windows requires the Visual Studio C++ Build Tools. This is a small subset (~1.7GB) of the overall Visual Studio offerring.** Scoop will automatically install the latest version before installing Crystal. The Visual Studio Installer UI will open to display progress.
 
