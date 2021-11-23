@@ -8,7 +8,7 @@
     ],
     "hash": [
         "82DFFDCD7D681236522D9669D83AA470B2B6D541371829954F31C21D5FFA9966",
-        "056ec89916ef537c94d44eb86b84ed2497cbfd926d1f1732b739fba67e2c47dc"
+        "43858B14B74250425C0079442BC5CD9C58F03C35E8D6731D61BFD28E53128920"
     ],
     "depends": ["vswhere", "vs_2022_cpp_build_tools"],
     "env_add_path": ".",
