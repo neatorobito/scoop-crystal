@@ -6,9 +6,9 @@ This repo provides a way to try the Crystal programming language on Windows.
 ### Instructions
 
 1. Install the [Scoop package manager](https://scoop.sh/)
-2. Then run the following commands: 
+2. If you don't already have it, install git with `scoop install git`
+3. Then run the following commands: 
 ```
-    scoop install git
     scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
     scoop update
     scoop install crystal
