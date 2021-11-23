@@ -24,7 +24,5 @@ Restart your terminal and voila!
 
 If another version of Visual Studio is already installed, this will not interfere with that installation.
 
-## What works
-Coming soon...
-## What doesn't work
-Coming soon...
+## Working/Not Working
+Crystal on Windows is still under active development. You may encounter bugs or missing functionality. For more information, see [#5430 Coordinate porting to Windows](https://github.com/crystal-lang/crystal/issues/5430#)
