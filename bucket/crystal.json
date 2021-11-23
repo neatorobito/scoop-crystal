@@ -3,8 +3,8 @@
     "description" : "Crystal programming language nightly preview",
     "pre_install": ["git clone https://github.com/crystal-lang/crystal $dir\\crystal-lang; pushd $dir\\crystal-lang; git checkout 4204bce -q; popd"],
     "url": [
-        "https://github.com/neatorobito/scoop-crystal/raw/main/crystal-nightly-bin-4204bce.zip",
-        "https://github.com/neatorobito/scoop-crystal/raw/main/crystal.ps1"
+        "https://github.com/neatorobito/scoop-crystal/blob/main/bin/crystal-nightly-bin-4204bce.zip?raw=true",
+        "https://github.com/neatorobito/scoop-crystal/raw/main/scripts/crystal.ps1"
     ],
     "hash": [
         "82DFFDCD7D681236522D9669D83AA470B2B6D541371829954F31C21D5FFA9966",
