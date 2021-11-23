@@ -1,4 +1,4 @@
-$installationPath = vswhere.exe -latest -products 'Microsoft.VisualStudio.Product.BuildTools' -property installationPath
+$installationPath = vswhere.exe -version "[15.0,)" -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.ATL -requiresAny -property installationPath
 if ($installationPath -and (test-path "$installationPath\Common7\Tools\vsdevcmd.bat")) {
   
   if(!$env:READY_FOR_CRYSTAL) {
