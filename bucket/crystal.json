@@ -1,13 +1,16 @@
 {
-    "version": "1.2.2",
-    "description" : "Crystal programming language nightly preview",
-    "pre_install": ["git clone https://github.com/crystal-lang/crystal $dir\\crystal-lang; pushd $dir\\crystal-lang; git checkout 4204bce -q; popd"],
+    "version": "1.2.2.1",
+    "description" : "Crystal programming language nightly preview @ 90218d9",
+    "pre_install" : ["mv $dir\\crystal-90218d9fc0a2cd06272b659371504ad543add1f4 $dir\\crystal-lang"],
     "url": [
-        "https://github.com/neatorobito/scoop-crystal/raw/main/bin/crystal-nightly-bin-4204bce.zip",
-        "https://github.com/neatorobito/scoop-crystal/raw/main/scripts/crystal.ps1"
+        "https://github.com/crystal-lang/crystal/archive/90218d9fc0a2cd06272b659371504ad543add1f4.zip",
+        "https://nightly.link/crystal-lang/crystal/actions/runs/1499901913/crystal.zip",
+        "https://raw.githubusercontent.com/neatorobito/scoop-crystal/5fb05bf647edf1903ab00596793ff27fbe27f23e/scripts/crystal.ps1"
     ],
     "hash": [
-        "82DFFDCD7D681236522D9669D83AA470B2B6D541371829954F31C21D5FFA9966"
+        "F40F0E7C7946954FEEC28E26EBDEEE1EA92D8A1E57B2B0296C0F05CD3A83AA7C",
+        "B987CC1E951EBF70C6CD2D74F444118A9F9737119B8934B16AD271EBDEB777E3",
+        "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4"
     ],
     "depends": ["vswhere", "git"],
     "env_add_path": ".",
