@@ -19,5 +19,7 @@
         "CRYSTAL_PATH": "$dir;$dir\\crystal-lang\\src"
     },
     "bin": ["crystal.ps1"],
-    "post_install": [ "mv $dir\\crystal.exe $dir\\_crystal.exe"]
+    "post_install": [ 
+        "mv $dir\\crystal.exe $dir\\_crystal.exe",
+        "If (Test-Path $env:LOCALAPPDATA\\crystal\\cache) { rm -r -fo $env:LOCALAPPDATA\\crystal\\cache}"]
 }
