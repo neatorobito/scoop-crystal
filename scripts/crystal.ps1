@@ -3,14 +3,15 @@ $fullInstallPath = vswhere.exe -version '[15.0,)' -property installationPath
 $installationPath = ""
 
 if($buildToolsPath) {
-  $compilersPath = $buildToolsPath
+  $installationPath = $buildToolsPath
 }
-else if($fullInstallPath){
-  $compilersPath = $fullInstallPath
+elseif($fullInstallPath){
+  $installationPath = $fullInstallPath
 }
 else
 {
-  "Can't find a full Visual Studio installation or a Visaul Studio Build Tools installation."
+  "Can't find a full Visual Studio installation or a Visual Studio Build Tools installation."
+  return
 }
 
 if ($installationPath -and (test-path "$installationPath\Common7\Tools\vsdevcmd.bat")) {
