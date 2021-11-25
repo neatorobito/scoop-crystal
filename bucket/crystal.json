@@ -10,7 +10,7 @@
     "url": [
         "https://github.com/crystal-lang/crystal/archive/90218d9fc0a2cd06272b659371504ad543add1f4.zip",
         "https://nightly.link/crystal-lang/crystal/actions/runs/1499901913/crystal.zip",
-        "https://raw.githubusercontent.com/neatorobito/scoop-crystal/5fb05bf647edf1903ab00596793ff27fbe27f23e/scripts/crystal.ps1"
+        "https://raw.githubusercontent.com/neatorobito/scoop-crystal/fdd4af7fc8f30a12a54863238dd846e720686472/scripts/crystal.ps1"
     ],
     "hash": [
         "F40F0E7C7946954FEEC28E26EBDEEE1EA92D8A1E57B2B0296C0F05CD3A83AA7C",
