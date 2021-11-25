@@ -12,8 +12,7 @@
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/fdd4af7fc8f30a12a54863238dd846e720686472/scripts/grab_latest_nightly.ps1"
     ],
     "hash": [
-        "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4",
-        "B86179908D3F392DA8AA6392314E371C7FF624C4AE2E74AD11935F405234606A"
+        "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4"
     ],
     "depends": ["vswhere", "git", "7zip"],
     "env_add_path": ".",
@@ -24,7 +23,6 @@
     "bin": ["crystal.ps1", "grab_latest_nightly.ps1"],
     "post_install": [ 
         "powershell -File $dir\\grab_latest_nightly.ps1",
-        "mv $dir\\lib\\crystal.exe $dir\\_crystal.exe",
         "If (Test-Path $env:LOCALAPPDATA\\crystal\\cache) { rm -r -fo $env:LOCALAPPDATA\\crystal\\cache}"
     ]
 }
