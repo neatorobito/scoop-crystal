@@ -1,6 +1,11 @@
 {
-    "version": "1.2.2.1",
-    "description" : "Crystal programming language nightly preview @ 90218d9",
+    "version": "1.2.2",
+    "description" : "Crystal programming language preview @ 90218d9",
+    "homepage": "https://crystal-lang.org/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
+    },
     "pre_install" : ["mv $dir\\crystal-90218d9fc0a2cd06272b659371504ad543add1f4 $dir\\crystal-lang"],
     "url": [
         "https://github.com/crystal-lang/crystal/archive/90218d9fc0a2cd06272b659371504ad543add1f4.zip",
@@ -13,13 +18,18 @@
         "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4"
     ],
     "depends": ["vswhere", "git"],
+    "extract_to" : [
+        "",
+        "lib",
+        ""
+    ],
     "env_add_path": ".",
     "env_set": {
-        "LIB": "$dir",
+        "LIB": "$dir\\lib",
         "CRYSTAL_PATH": "$dir;$dir\\crystal-lang\\src"
     },
     "bin": ["crystal.ps1"],
     "post_install": [ 
-        "mv $dir\\crystal.exe $dir\\_crystal.exe",
+        "mv $dir\\lib\\crystal.exe $dir\\_crystal.exe",
         "If (Test-Path $env:LOCALAPPDATA\\crystal\\cache) { rm -r -fo $env:LOCALAPPDATA\\crystal\\cache}"]
 }
