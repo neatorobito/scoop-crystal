@@ -8,11 +8,11 @@
     },
     "pre_install": [],
     "url": [
-        "https://raw.githubusercontent.com/neatorobito/scoop-crystal/5fb05bf647edf1903ab00596793ff27fbe27f23e/scripts/crystal.ps1",
-        "https://gist.githubusercontent.com/neatorobito/46cdfa8dafb02b4234ef1830e189bec1/raw/7017b1d4b5d16076e258809ff0c479100c9dece1/grab_latest_nightly.ps1"
+        "https://raw.githubusercontent.com/neatorobito/scoop-crystal/c8ea9aedc6d099ceaf339da5f9db17c190cc70f3/scripts/crystal.ps1",
+        "https://raw.githubusercontent.com/neatorobito/scoop-crystal/c8ea9aedc6d099ceaf339da5f9db17c190cc70f3/scripts/grab_latest_nightly.ps1"
     ],
     "hash": [
-        "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4"
+
     ],
     "depends": ["vswhere", "git", "7zip"],
     "env_add_path": ".",
