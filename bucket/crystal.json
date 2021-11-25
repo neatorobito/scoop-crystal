@@ -9,7 +9,7 @@
     "pre_install" : ["mv $dir\\crystal-90218d9fc0a2cd06272b659371504ad543add1f4 $dir\\crystal-lang"],
     "url": [
         "https://github.com/crystal-lang/crystal/archive/90218d9fc0a2cd06272b659371504ad543add1f4.zip",
-        "https://nightly.link/crystal-lang/crystal/actions/runs/1499901913/crystal.zip",
+        "https://nightly.link/crystal-lang/crystal/actions/artifacts/118295502.zip",
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/35f359dc4444e29119027f35232ca89a785eb473/scripts/crystal.ps1"
     ],
     "hash": [
