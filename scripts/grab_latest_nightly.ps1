@@ -60,7 +60,7 @@ Invoke-WebRequest -Uri "$CRYSTAL_NIGHTLY_ENDPOINT/$run_id/crystal.zip" -OutFile 
 "Extracting binaries..."
 7z.exe x -aoa nightly.zip | Out-Null
 
-mv crystal.exe ..\\_crystal.exe -Force
+mv .\crystal.exe $CRYSTAL_NIGHTLY_SCOOP_DIR\_crystal.exe -Force
 
 Print-ReleaseVersion
 "Successfully acquired latest Crystal nightly release."
