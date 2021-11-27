@@ -52,7 +52,8 @@ jobs:
             }
 
             const data = JSON.parse(await fs.readFile("bucket/crystal.json", "utf8"));
-
+            const new_nightly_version = parseInt(data["version"].at(-1)) + 1;
+            data["version"] = data["version"].slice(0, -1) + new_nightly_version;
             data["description"] = `Crystal programming language preview @ ${head_sha.slice(0, 9)}`;
             data["pre_install"] = [`mv $dir\\crystal-${head_sha} $dir\\crystal-lang`];
             data["url"] = urls.concat(data["url"].slice(2));

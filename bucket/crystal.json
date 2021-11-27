@@ -1,5 +1,5 @@
 {
-    "version": "1.2.2",
+    "version": "1.2.2.0",
     "description": "Crystal programming language preview @ 07b206582",
     "homepage": "https://crystal-lang.org/",
     "license": {
@@ -15,8 +15,8 @@
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/35f359dc4444e29119027f35232ca89a785eb473/scripts/crystal.ps1"
     ],
     "hash": [
-        "DBB878C7B2D1FE4C1E54BE57D92AB60B91B8F55F123E9823E0813935318AF8C6",
-        "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "",
+        "",
         "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4"
     ],
     "depends": [
