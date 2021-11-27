@@ -36,6 +36,11 @@ jobs:
                 return core.error("No 'crystal' artifact found");
             }
 
+            const urls = [
+                `https://github.com/crystal-lang/crystal/archive/${head_sha}.zip`,
+                `https://nightly.link/crystal-lang/crystal/actions/artifacts/${artifact.id}.zip`,
+            ];
+
             const data = JSON.parse(await fs.readFile("bucket/crystal.json", "utf8"));
             const new_nightly_version = parseInt(data["version"].slice(-1)) + 1;
             data["version"] = data["version"].slice(0, -1) + new_nightly_version;
@@ -44,10 +49,6 @@ jobs:
             data["url"] = urls.concat(data["url"].slice(2));
 
             if(data["hash"]) {
-              const urls = [
-                  `https://github.com/crystal-lang/crystal/archive/${head_sha}.zip`,
-                  `https://nightly.link/crystal-lang/crystal/actions/artifacts/${artifact.id}.zip`,
-              ];
               const hashes = await Promise.all(urls.map(hash_url));
 
               function hash_url(url) {
