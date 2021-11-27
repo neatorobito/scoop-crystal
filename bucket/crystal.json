@@ -1,22 +1,22 @@
 {
     "version": "1.2.2",
-    "description": "Crystal programming language preview @ 90218d9fc",
+    "description": "Crystal programming language preview @ 07b206582",
     "homepage": "https://crystal-lang.org/",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "pre_install": [
-        "mv $dir\\crystal-90218d9fc0a2cd06272b659371504ad543add1f4 $dir\\crystal-lang"
+        "mv $dir\\crystal-07b2065823560a1859ca68b2f4d99403f590c8ad $dir\\crystal-lang"
     ],
     "url": [
-        "https://github.com/crystal-lang/crystal/archive/90218d9fc0a2cd06272b659371504ad543add1f4.zip",
-        "https://nightly.link/crystal-lang/crystal/actions/artifacts/118295502.zip",
+        "https://github.com/crystal-lang/crystal/archive/07b2065823560a1859ca68b2f4d99403f590c8ad.zip",
+        "https://nightly.link/crystal-lang/crystal/actions/artifacts/119238600.zip",
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/35f359dc4444e29119027f35232ca89a785eb473/scripts/crystal.ps1"
     ],
     "hash": [
-        "F40F0E7C7946954FEEC28E26EBDEEE1EA92D8A1E57B2B0296C0F05CD3A83AA7C",
-        "B987CC1E951EBF70C6CD2D74F444118A9F9737119B8934B16AD271EBDEB777E3",
+        "DBB878C7B2D1FE4C1E54BE57D92AB60B91B8F55F123E9823E0813935318AF8C6",
+        "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
         "2F35032B2F12AE8F7E8EF37FF95F1D6404035E42631555923B7C30CDBC1653B4"
     ],
     "depends": [
