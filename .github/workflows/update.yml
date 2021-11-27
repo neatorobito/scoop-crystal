@@ -57,7 +57,7 @@ jobs:
             data["description"] = `Crystal programming language preview @ ${head_sha.slice(0, 9)}`;
             data["pre_install"] = [`mv $dir\\crystal-${head_sha} $dir\\crystal-lang`];
             data["url"] = urls.concat(data["url"].slice(2));
-            # data["hash"] = hashes.concat(data["hash"].slice(2));
+            data["hash"] = hashes.concat(data["hash"].slice(2));
 
             await fs.writeFile("bucket/crystal.json", JSON.stringify(data, null, 4) + "\n", "utf8");
 
