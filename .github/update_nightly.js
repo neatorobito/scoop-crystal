@@ -29,20 +29,27 @@ async function main({github, core}) {
     ];
 
     const data = JSON.parse(await fs.readFile("bucket/crystal.json", "utf8"));
-    const new_nightly_version = parseInt(data["version"].slice(-1)) + 1;
-    data["version"] = data["version"].slice(0, -1) + new_nightly_version;
-    data["description"] = `Crystal programming language preview @ ${head_sha.slice(0, 9)}`;
-    data["pre_install"] = [`mv $dir\\crystal-${head_sha} $dir\\crystal-lang`];
-    data["url"] = urls.concat(data["url"].slice(2));
+
+    const new_data = {
+        ...data,
+        "description": `Crystal programming language preview @ ${head_sha.slice(0, 9)}`,
+        "pre_install": [`mv $dir\\crystal-${head_sha} $dir\\crystal-lang`],
+        "url": urls.concat(data["url"].slice(2)),
+    };
+
+    if (new_data["description"] === data["description"] && new_data["url"].toString() === data["url"].toString()) {
+        return;
+    }
 
     if (data["hash"]) {
         const hashes = await Promise.all(urls.map(hash_url));
-        data["hash"] = hashes.concat(data["hash"].slice(2));
+        new_data["hash"] = hashes.concat(data["hash"].slice(2));
     }
 
-    await fs.writeFile("bucket/crystal.json", JSON.stringify(data, null, 4) + "\n", "utf8");
-}
+    new_data["version"] = data["version"].replace(/[0-9]+$/, (s) => parseInt(s) + 1);
 
+    await fs.writeFile("bucket/crystal.json", JSON.stringify(new_data, null, 4) + "\n", "utf8");
+}
 
 function hash_url(url) {
     return new Promise((resolve, reject) => {
