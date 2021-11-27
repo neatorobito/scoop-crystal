@@ -36,30 +36,33 @@ jobs:
                 return core.error("No 'crystal' artifact found");
             }
 
-            const urls = [
-                `https://github.com/crystal-lang/crystal/archive/${head_sha}.zip`,
-                `https://nightly.link/crystal-lang/crystal/actions/artifacts/${artifact.id}.zip`,
-            ];
-            const hashes = await Promise.all(urls.map(hash_url));
-
-            function hash_url(url) {
-                return new Promise((resolve, reject) => {
-                    https.get(url, (response) => {
-                        const hash = crypto.createHash("sha256");
-                        response.on("error", reject);
-                        response.on("data", (chunk) => hash.update(chunk));
-                        response.on("end", () => resolve(hash.digest("hex").toUpperCase()));
-                    });
-                });
-            }
-
             const data = JSON.parse(await fs.readFile("bucket/crystal.json", "utf8"));
             const new_nightly_version = parseInt(data["version"].slice(-1)) + 1;
             data["version"] = data["version"].slice(0, -1) + new_nightly_version;
             data["description"] = `Crystal programming language preview @ ${head_sha.slice(0, 9)}`;
             data["pre_install"] = [`mv $dir\\crystal-${head_sha} $dir\\crystal-lang`];
             data["url"] = urls.concat(data["url"].slice(2));
-            data["hash"] = hashes.concat(data["hash"].slice(2));
+
+            if(data["hash"]) {
+              const urls = [
+                  `https://github.com/crystal-lang/crystal/archive/${head_sha}.zip`,
+                  `https://nightly.link/crystal-lang/crystal/actions/artifacts/${artifact.id}.zip`,
+              ];
+              const hashes = await Promise.all(urls.map(hash_url));
+
+              function hash_url(url) {
+                  return new Promise((resolve, reject) => {
+                      https.get(url, (response) => {
+                          const hash = crypto.createHash("sha256");
+                          response.on("error", reject);
+                          response.on("data", (chunk) => hash.update(chunk));
+                          response.on("end", () => resolve(hash.digest("hex").toUpperCase()));
+                      });
+                  });
+              }
+              
+              data["hash"] = hashes.concat(data["hash"].slice(2));
+            }
 
             await fs.writeFile("bucket/crystal.json", JSON.stringify(data, null, 4) + "\n", "utf8");
 
