@@ -1,9 +1,10 @@
-on: [push, workflow_dispatch]
-
-branches: [main]
-
-schedule:
-  - cron: '0 6 * * *'
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * *'
 
 jobs:
   update-nightly:
