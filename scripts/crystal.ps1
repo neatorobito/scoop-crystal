@@ -15,7 +15,7 @@ if(!$env:READY_FOR_CRYSTAL) {
     return
   }
 
-  if ($installationPath -and (test-path "$installationPath\Common7\Tools\vsdevcmd.bat")) {
+  if ((test-path "$installationPath\Common7\Tools\vsdevcmd.bat")) {
   
     & "${env:COMSPEC}" /s /c "`"$installationPath\Common7\Tools\vsdevcmd.bat`" -no_logo -arch=amd64 && set" | foreach-object {
       $name, $value = $_ -split '=', 2
