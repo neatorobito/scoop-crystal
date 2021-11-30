@@ -6,11 +6,7 @@
         "identifier": "Freeware",
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
-    "pre_install": [
-        "mv $dir\\crystal-6eb0bb1354ac34e701c634c1b006f3a07744fb65 $dir\\crystal-lang"
-    ],
     "url": [
-        "https://github.com/crystal-lang/crystal/archive/6eb0bb1354ac34e701c634c1b006f3a07744fb65.zip",
         "https://nightly.link/crystal-lang/crystal/actions/artifacts/120083270.zip",
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/3d681f1e4cbcf2bac91dc385b1a82034d14ee177/scripts/crystal.ps1"
     ],
@@ -20,19 +16,14 @@
     ],
     "extract_to": [
         "",
-        "lib",
         ""
     ],
     "env_add_path": ".",
-    "env_set": {
-        "LIB": "$dir\\lib",
-        "CRYSTAL_PATH": "$dir;$dir\\crystal-lang\\src"
-    },
     "bin": [
         "crystal.ps1"
     ],
     "post_install": [
-        "mv $dir\\lib\\crystal.exe $dir\\_crystal.exe",
+        "mv $dir\\crystal.exe $dir\\_crystal.exe",
         "If (Test-Path $env:LOCALAPPDATA\\crystal\\cache) { rm -r -fo $env:LOCALAPPDATA\\crystal\\cache}"
     ]
 }

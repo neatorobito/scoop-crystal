@@ -24,7 +24,6 @@ async function main({github, core}) {
     }
 
     const urls = [
-        `https://github.com/crystal-lang/crystal/archive/${head_sha}.zip`,
         `https://nightly.link/crystal-lang/crystal/actions/artifacts/${artifact.id}.zip`,
     ];
 
@@ -33,8 +32,7 @@ async function main({github, core}) {
     const new_data = {
         ...data,
         "description": `Crystal programming language preview @ ${head_sha.slice(0, 9)}`,
-        "pre_install": [`mv $dir\\crystal-${head_sha} $dir\\crystal-lang`],
-        "url": urls.concat(data["url"].slice(2)),
+        "url": urls.concat(data["url"].slice(1)),
     };
 
     if (new_data["description"] === data["description"] && new_data["url"].toString() === data["url"].toString()) {
@@ -43,7 +41,7 @@ async function main({github, core}) {
 
     if (data["hash"]) {
         const hashes = await Promise.all(urls.map(hash_url));
-        new_data["hash"] = hashes.concat(data["hash"].slice(2));
+        new_data["hash"] = hashes.concat(data["hash"].slice(1));
     }
 
     new_data["version"] = data["version"].replace(/[0-9]+$/, (s) => parseInt(s) + 1);
