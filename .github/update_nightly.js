@@ -1,6 +1,6 @@
 const fs = require("fs").promises;
 const crypto = require("crypto");
-const https = require("https");
+const { https } = require('follow-redirects');
 
 async function main({github, core}) {
     const [owner, repo] = ["crystal-lang", "crystal"];

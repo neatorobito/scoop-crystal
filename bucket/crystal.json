@@ -1,22 +1,22 @@
 {
-    "version": "1.2.2.7",
-    "description": "Crystal programming language preview @ baf5c3b30",
+    "version": "1.2.2.8",
+    "description": "Crystal programming language preview @ 1e73e9cef",
     "homepage": "https://crystal-lang.org/",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://nightly.link/crystal-lang/crystal/actions/artifacts/120537469.zip",
+        "https://nightly.link/crystal-lang/crystal/actions/artifacts/120863414.zip",
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/3d681f1e4cbcf2bac91dc385b1a82034d14ee177/scripts/crystal.ps1"
+    ],
+    "hash": [
+        "0262D79F934C4ADB0C1C6084FAE44B52B44EF6A0A1A9331617361B781ADAE3E1",
+        "06E4EF2B7196080887A4FEE4B235CC1C3F5B7F8D55A8A67509CD26BDAD53F968"
     ],
     "depends": [
         "vswhere",
         "git"
-    ],
-    "extract_to": [
-        "",
-        ""
     ],
     "env_add_path": ".",
     "bin": [
