@@ -1,13 +1,13 @@
 {
-    "version": "1.2.2.6",
-    "description": "Crystal programming language preview @ e76ce1087",
+    "version": "1.2.2.7",
+    "description": "Crystal programming language preview @ baf5c3b30",
     "homepage": "https://crystal-lang.org/",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://nightly.link/crystal-lang/crystal/actions/artifacts/120390659.zip",
+        "https://nightly.link/crystal-lang/crystal/actions/artifacts/120537469.zip",
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/3d681f1e4cbcf2bac91dc385b1a82034d14ee177/scripts/crystal.ps1"
     ],
     "depends": [
