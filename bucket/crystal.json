@@ -10,13 +10,13 @@
         "https://nightly.link/crystal-lang/crystal/actions/artifacts/120537469.zip",
         "https://raw.githubusercontent.com/neatorobito/scoop-crystal/3d681f1e4cbcf2bac91dc385b1a82034d14ee177/scripts/crystal.ps1"
     ],
+    "hash": [
+        "",
+        "06E4EF2B7196080887A4FEE4B235CC1C3F5B7F8D55A8A67509CD26BDAD53F968"
+    ],
     "depends": [
         "vswhere",
         "git"
-    ],
-    "extract_to": [
-        "",
-        ""
     ],
     "env_add_path": ".",
     "bin": [
