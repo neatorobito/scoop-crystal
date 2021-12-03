@@ -3,7 +3,7 @@
     "description": "Crystal programming language preview @ cbad1e4e1",
     "homepage": "https://crystal-lang.org/",
     "license": {
-        "identifier": "Freeware",
+        "identifier": "Apache-2.0",
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
