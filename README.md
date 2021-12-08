@@ -4,8 +4,9 @@ This repo provides a way to try the Crystal programming language on Windows.
 ## Getting started
 
 ### Requirements
-1. [Scoop package manager](https://scoop.sh/)
-2. Visual Studio or Visual Studio Build Tools with `Microsoft.VisualStudio.Workload.VCTools` and `Microsoft.VisualStudio.Component.VC.ATL` components. 
+1. Enable developer mode in Settings.
+2. [Scoop package manager](https://scoop.sh/)
+3. Visual Studio or Visual Studio Build Tools with `Microsoft.VisualStudio.Workload.VCTools` and `Microsoft.VisualStudio.Component.VC.ATL` components. 
      * If you already have an existing Visual Studio installation (2017 or later), open the installer and simply select these components under Desktop Development. 
      * Otherwise you can install a smaller subset of Visual Studio with only the tools you need from this bucket, see below.
 
