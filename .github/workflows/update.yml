@@ -18,8 +18,10 @@ jobs:
       - uses: actions/github-script@v5
         with:
           script: |
-            const script = require('./.github/update_nightly.js');
-            await script({github, core});
+            const crystal_nightly = require('./.github/update_nightly.js');
+            const vs_hash = require('./.github/update_vs.js');
+            await crystal_nightly({github, core});
+            await vs_hash();
 
       - run: git diff --exit-code || git -c user.email='github-actions[bot]@users.noreply.github.com' -c user.name='github-actions[bot]' commit -a -m 'Update nightly version'
       - run: git push
