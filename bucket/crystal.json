@@ -15,6 +15,9 @@
     "depends": [
         "vswhere"
     ],
+    "suggest": {
+        "Shards package manager": "scoop-crystal/shards"
+    },
     "bin": [
         "crystal.exe"
     ],
