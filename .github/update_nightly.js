@@ -27,7 +27,7 @@ async function main({github, core}) {
         `https://nightly.link/crystal-lang/crystal/actions/artifacts/${artifact.id}.zip`,
     ];
 
-    const data = JSON.parse(await fs.readFile("bucket/crystal.json", "utf8"));
+    const data = JSON.parse(await fs.readFile("bucket/crystal-nightly.json", "utf8"));
 
     const new_data = {
         ...data,
@@ -46,7 +46,7 @@ async function main({github, core}) {
 
     new_data["version"] = data["version"].replace(/[0-9]+$/, (s) => parseInt(s) + 1);
 
-    await fs.writeFile("bucket/crystal.json", JSON.stringify(new_data, null, 4) + "\n", "utf8");
+    await fs.writeFile("bucket/crystal-nightly.json", JSON.stringify(new_data, null, 4) + "\n", "utf8");
 }
 
 function hash_url(url) {

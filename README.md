@@ -16,7 +16,7 @@ This repo provides a way to try the Crystal programming language on Windows.
 
     * If you don't already have the correct Visual Studio components discussed earlier, run `scoop install vs_2022_cpp_build_tools`. The Visual Studio Installer UI will open to display progress.
 
-2. `scoop install crystal shards`
+2. `scoop install crystal`
 
 Create a file called hello.cr with the editor of your choice:
 
