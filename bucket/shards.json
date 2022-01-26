@@ -1,0 +1,34 @@
+{
+    "version": "0.16.0",
+    "description": "Dependency manager for Crystal programming language",
+    "homepage": "https://crystal-lang.org/",
+    "license": {
+        "identifier": "Apache-2.0",
+        "url": "https://github.com/crystal-lang/shards/blob/master/LICENSE"
+    },
+    "depends": [
+        "crystal"
+    ],
+    "url": [
+        "https://github.com/crystal-lang/shards/archive/refs/tags/v0.16.0.zip",
+        "https://github.com/crystal-lang/crystal-molinillo/archive/refs/tags/v0.2.0.zip"
+    ],
+    "hash": [
+        "FC2C7C405540188F3F20B737AE5BC99684B6D65D86771ADBC1CA63FCD727A832",
+        "9D14801DC2C4BC9215A593E5C225CCA8147067E1751D26B238CB1396F6BBEDD8"
+    ],
+    "extract_dir": [
+        "shards-0.16.0",
+        "crystal-molinillo-0.2.0"
+    ],
+    "extract_to": [
+        "",
+        "lib\\molinillo"
+    ],
+    "bin": [
+        "shards.exe"
+    ],
+    "pre_install": [
+        "pushd $dir; crystal build --no-color src/shards.cr; popd"
+    ]
+}
