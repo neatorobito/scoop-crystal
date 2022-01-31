@@ -14,7 +14,7 @@ This repo provides a way to try the Crystal programming language on Windows.
 
 1. `scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal`
 
-    * If you don't already have the correct Visual Studio components discussed earlier, run `scoop install vs_2022_cpp_build_tools`. The Visual Studio Installer UI will open to display progress.
+    * If you don't already have the correct Visual Studio components discussed earlier, run `scoop install vs_2022_cpp_build_tools`. The Visual Studio Installer UI will open to display progress. If you see `ERROR Exit code was 3010!`, this simply means you need to reboot. Run the same command again and reboot.
 
 2. `scoop install crystal`
 
