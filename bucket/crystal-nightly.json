@@ -1,16 +1,16 @@
 {
-    "version": "1.3.2.52",
-    "description": "Crystal programming language preview @ bb5d1c9c2",
+    "version": "1.3.2.53",
+    "description": "Crystal programming language preview @ f6f92a15a",
     "homepage": "https://crystal-lang.org/",
     "license": {
         "identifier": "Apache-2.0",
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://nightly.link/crystal-lang/crystal/actions/artifacts/202785817.zip"
+        "https://nightly.link/crystal-lang/crystal/actions/artifacts/203409628.zip"
     ],
     "hash": [
-        "30A3E23097FDCCED41DBB44F899C6D0603272598E55F51935267A1918791BBE5"
+        "8E319A9C8AF0B7CEFE8EEE4E458C4B0A5C5CE88F7C151D856C24F81DF80C93D9"
     ],
     "depends": [
         "vswhere"
