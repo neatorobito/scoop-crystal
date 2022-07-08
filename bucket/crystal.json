@@ -1,5 +1,5 @@
 {
-    "version": "1.4.1",
+    "version": "1.5.0",
     "description": "Crystal programming language preview",
     "homepage": "https://crystal-lang.org/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/crystal-lang/crystal/releases/download/1.4.1/crystal-1.4.1-windows-x86_64-msvc-unsupported.zip"
+        "https://github.com/crystal-lang/crystal/releases/download/1.5.0/crystal-1.5.0-windows-x86_64-msvc-unsupported.zip"
     ],
     "hash": [
         "F4D357C145B0BF4E50F410919E91F6168B7DAC892D9DA8BDE70D7F4205E88350"
