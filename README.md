@@ -1,5 +1,5 @@
 # Crystal for Windows Preview
-This repo provides a way to try the Crystal programming language on Windows.
+This repo provides an official way to try the Crystal programming language on Windows.
 
 ## Getting started
 
@@ -27,4 +27,6 @@ Restart your terminal and voila!
 ![image](https://user-images.githubusercontent.com/3013405/143065706-5da8ec8e-b6de-4f28-8a29-74569dc2ae89.png)
 
 ## Working/Not Working
-Crystal on Windows is still under active development. You may encounter bugs or missing functionality. For more information, see [#5430 Coordinate porting to Windows](https://github.com/crystal-lang/crystal/issues/5430#)
+The majority of the language is available and functional on Windows with the exception of multi-threading and signals. 
+
+Keep in mind, however, that Crystal for Windows is still under development and so you may encounter some issues. Please file bugs for any issues you encounter on the Crystal repo page. For more in-depth information and the current status of the Windows port, see [#5430 Coordinate porting to Windows](https://github.com/crystal-lang/crystal/issues/5430#)
