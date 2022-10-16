@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0",
+    "version": "1.6.9",
     "description": "Crystal programming language preview",
     "homepage": "https://crystal-lang.org/",
     "license": {
@@ -7,10 +7,10 @@
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/crystal-lang/crystal/releases/download/1.5.0/crystal-1.5.0-windows-x86_64-msvc-unsupported.zip"
+        "https://github.com/crystal-lang/crystal/releases/download/1.6.0/crystal-1.6.0-windows-x86_64-msvc-unsupported.zip"
     ],
     "hash": [
-        "B7354EEC51838D48F8F72948EE64E06F26AA82F60ECE9001CF98EF19D62A4E50"
+        "8660801BBC296F71E3E434B0BB741DE73AB0CDF333F8D74669CBACEF22EAB865"
     ],
     "depends": [
         "vswhere"
