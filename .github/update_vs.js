@@ -1,10 +1,10 @@
 const fs = require("fs").promises;
 const crypto = require("crypto");
-const { https } = require('follow-redirects');
+const https = require('https');
 
 async function main() {
     const urls = [
-        "https://aka.ms/vs/17/release/vs_BuildTools.exe",
+        "https://download.visualstudio.microsoft.com/download/pr/8f480125-28b8-4a2c-847c-c2b02a8cdd1b/6c72a5bb904001308a71aa7b3621e921f736c3cc17d47ad7d3322c77c7d38b05/vs_BuildTools.exe",
     ];
 
     const data = JSON.parse(await fs.readFile("bucket/vs_2022_cpp_build_tools.json", "utf8"));
