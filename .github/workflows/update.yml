@@ -7,7 +7,7 @@ on:
     - cron: '0 6 * * *'
 
 jobs:
-  update-nightly:
+  update-mainline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

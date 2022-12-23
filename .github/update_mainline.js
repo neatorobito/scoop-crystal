@@ -5,16 +5,16 @@ const { https } = require('follow-redirects');
 async function main({github, core}) {
     const [owner, repo] = ["crystal-lang", "crystal"];
 
-    const latest = await github.rest.repos.getLatestRelease({
+    const {data: {assets, name}} = await github.rest.repos.getLatestRelease({
         owner, repo
     });
   
-    if (!latest) {
+    if (!assets) {
         core.error("No releases found");
         return;
     }
-    
-    const windowsRelease = latest.assets.find(platformRelease => platformRelease.name.includes("windows"))
+
+    const windowsRelease = assets.find(platformRelease => platformRelease.name.includes("windows"))
 
     if(!windowsRelease) {
         core.error("Failed to find win32 asset in latest release.")
@@ -28,7 +28,7 @@ async function main({github, core}) {
 
     const new_data = {
         ...data,
-        "version": `${latest.name}`,
+        "version": `${name}`,
         "url": urls.concat(data["url"].slice(1)),
     };
 
@@ -40,8 +40,6 @@ async function main({github, core}) {
         const hashes = await Promise.all(urls.map(hash_url));
         new_data["hash"] = hashes.concat(data["hash"].slice(1));
     }
-
-    new_data["version"] = data["version"]
 
     await fs.writeFile("bucket/crystal.json", JSON.stringify(new_data, null, 4) + "\n", "utf8");
 }
