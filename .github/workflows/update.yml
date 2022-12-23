@@ -12,11 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm install follow-redirects
       - uses: actions/github-script@v6
         with:
+          node-version: 16
           script: |
             const crystal_nightly = require('./.github/update_nightly.js');
             const vs_hash = require('./.github/update_vs.js');
