@@ -7,7 +7,7 @@ on:
     - cron: '0 6 * * *'
 
 jobs:
-  update-nightly:
+  update-mainline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,9 +18,9 @@ jobs:
       - uses: actions/github-script@v5
         with:
           script: |
-            const crystal_nightly = require('./.github/update_nightly.js');
+            const crystal_mainline = require('./.github/update_mainline.js');
             const vs_hash = require('./.github/update_vs.js');
-            await crystal_nightly({github, core});
+            await crystal_mainline({github, core});
             await vs_hash();
 
       - run: git diff --exit-code || git -c user.email='github-actions[bot]@users.noreply.github.com' -c user.name='github-actions[bot]' commit -a -m 'Update nightly version'
