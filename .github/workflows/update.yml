@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install follow-redirects
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         with:
           script: |
             const crystal_nightly = require('./.github/update_nightly.js');
