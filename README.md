@@ -11,12 +11,12 @@ This repo provides an official way to try the Crystal programming language on Wi
      * Otherwise you can install a smaller subset of Visual Studio with only the tools you need from this bucket, see below.
 
 ### Instructions
-
-1. `scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal`
+1. `scoop install git`
+2. `scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal`
 
     * If you don't already have the correct Visual Studio components discussed earlier, run `scoop install vs_2022_cpp_build_tools`. The Visual Studio Installer UI will open to display progress. If you see `ERROR Exit code was 3010!`, this simply means you need to reboot. Run the same command again and reboot.
 
-2. `scoop install crystal`
+3. `scoop install crystal`
 
 Create a file called hello.cr with the editor of your choice:
 
