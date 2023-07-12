@@ -23,6 +23,5 @@ jobs:
             await crystal_mainline({github, core});
             await vs_hash();
 
-      - run: git diff
       - run: git diff --exit-code || git -c user.email='github-actions[bot]@users.noreply.github.com' -c user.name='github-actions[bot]' commit -a -m 'Update mainline version'
       - run: git push
