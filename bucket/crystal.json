@@ -7,7 +7,7 @@
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/crystal-lang/crystal/releases/download/1.9.0/crystal-1.9.0-windows-x86_64-msvc-unsupported.exe"
+        "https://github.com/crystal-lang/crystal/releases/download/1.9.0/crystal-1.9.0-windows-x86_64-msvc-unsupported.zip"
     ],
     "hash": [
         "B1B9BA4F03077AC256938ABD74C0FA38B69660C5609276C1247AB4DB17D8A42B"

@@ -8,18 +8,20 @@ async function main({github, core}) {
     const {data: {assets, name}} = await github.rest.repos.getLatestRelease({
         owner, repo
     });
-  
+
     if (!assets) {
         core.error("No releases found");
         return;
     }
 
-    const windowsRelease = assets.find(platformRelease => platformRelease.name.includes("windows"))
+    const windowsRelease = assets.find(
+        platformRelease => (platformRelease.name.includes("windows") && platformRelease.name.includes?(".zip"))
+    );
 
     if(!windowsRelease) {
         core.error("Failed to find win32 asset in latest release.")
     }
-  
+
     const urls = [
         windowsRelease.browser_download_url,
     ];
