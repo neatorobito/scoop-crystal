@@ -1,5 +1,5 @@
 {
-    "version": "1.11.1",
+    "version": "1.11.2",
     "description": "Crystal for Windows Preview",
     "homepage": "https://crystal-lang.org/",
     "license": {
@@ -7,10 +7,10 @@
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/crystal-lang/crystal/releases/download/1.11.1/crystal-1.11.1-windows-x86_64-msvc-unsupported.zip"
+        "https://github.com/crystal-lang/crystal/releases/download/1.11.2/crystal-1.11.2-windows-x86_64-msvc-unsupported.zip"
     ],
     "hash": [
-        "E40D9524334BF40D487AB598F33F47519725DBDB0D5DA72BC40FFE111F616CAC"
+        "EEE6A835D0C3BB9EA2DCE5B92C53EB2F11079C06CFD3011BA82F5454BBF7B811"
     ],
     "depends": [
         "vswhere"
