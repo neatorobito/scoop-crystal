@@ -2,7 +2,7 @@
     "version": "17.0",
     "description": "Visual Studio 2022 C++ Build Tools",
     "url": "https://aka.ms/vs/17/release/vs_BuildTools.exe",
-    "hash": "72224EDA2843205F7B6ABBBD93DA8426D05F25571F8A02B4915A6D61CBBF1B13",
+    "hash": "AB3CFF3D3A8C48804F47EB521CF138480F5ED4FE86476DD449A420777D7F2EAD",
     "installer": {
         "file": "vs_BuildTools.exe",
         "args": [
