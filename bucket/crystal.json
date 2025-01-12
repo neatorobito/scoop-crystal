@@ -7,10 +7,10 @@
         "url": "https://github.com/crystal-lang/crystal/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/crystal-lang/crystal/releases/download/1.15.0/crystal-1.15.0-windows-x86_64-msvc-unsupported.zip"
+        "https://github.com/crystal-lang/crystal/releases/download/1.15.0/crystal-1.15.0-windows-x86_64-gnu-unsupported.zip"
     ],
     "hash": [
-        "743E08B86E41051985FA0E85375EEEBC62EFCCCBCE05BF5944BE6A15F849F369"
+        "7D7DF1B4A99CB3F938106BA45E0B55CE1D9913491999F1ACAA57DA168A18BECB"
     ],
     "depends": [
         "vswhere"
