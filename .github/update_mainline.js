@@ -15,7 +15,7 @@ async function main({github, core}) {
     }
 
     const windowsRelease = assets.find(
-        platformRelease => (platformRelease.name.includes("windows") && platformRelease.name.includes(".zip"))
+        platformRelease => (platformRelease.name.includes("windows-x86_64-msvc") && platformRelease.name.includes(".zip"))
     );
 
     if(!windowsRelease) {
