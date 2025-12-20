@@ -5,7 +5,7 @@ This repo provides an official way to try the Crystal programming language on Wi
 1. [Scoop Package Manager](https://scoop.sh/)
 2. Visual Studio or Visual Studio Build Tools with `Microsoft.VisualStudio.Workload.VCTools` and `Microsoft.VisualStudio.Component.VC.ATL` components. 
      * If you already have an existing Visual Studio installation (2017 or later), open the installer and simply select these components under Desktop Development. 
-     * Otherwise, you can install a smaller subset of Visual Studio with only the tools you need from this bucket. More on that later.
+     * Otherwise, you can install a smaller subset of Visual Studio with only the tools you need from this bucket (more on that later).
 
 ### Instructions
 Run the following in commands in terminal to install the latest crystal release.
